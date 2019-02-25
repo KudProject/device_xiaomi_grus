@@ -28,6 +28,9 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3758096384
 
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
+# Power
+TARGET_TAP_TO_WAKE_NODE := "/dev/input/event2"
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
