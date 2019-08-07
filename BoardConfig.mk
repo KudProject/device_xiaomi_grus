@@ -12,6 +12,9 @@ DEVICE_PATH := device/xiaomi/grus
 # Assert
 TARGET_OTA_ASSERT_DEVICE := grus
 
+# Kernel
+TARGET_KERNEL_CONFIG := grus_defconfig
+
 # NFC
 TARGET_USES_NQ_NFC := true
 
