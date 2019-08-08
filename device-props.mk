@@ -16,6 +16,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.eyecare.brightness.level=5 \
     ro.hist.brightness.threshold=7
 
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    audio.settings.xml=/system/etc/media_profiles_vendor.xml
+
 # NFC
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.nfc.port=I2C
