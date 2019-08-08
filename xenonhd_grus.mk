@@ -27,3 +27,7 @@ BUILD_FINGERPRINT := "Xiaomi/grus/grus:9/PKQ1.181121.001/V10.3.3.0.PFBCNXM:user/
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="grus" \
     TARGET_DEVICE="grus"
+
+# Device maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.xenonhd.maintainer=krasCGQ
