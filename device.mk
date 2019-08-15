@@ -29,5 +29,14 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Inherit from Xiaomi sdm710-common
 $(call inherit-product, device/xiaomi/sdm710-common/sdm710.mk)
 
+# NFC
+PRODUCT_PACKAGES += \
+    NQNfcNci \
+    Tag \
+    com.android.nfc_extras \
+    com.nxp.nfc.nq \
+    nqnfcee_access.xml \
+    nqnfcse_access.xml
+
 # Inherit from proprietary version
 $(call inherit-product-if-exists, vendor/xiaomi/grus/grus-vendor.mk)
