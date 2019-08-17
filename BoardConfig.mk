@@ -52,4 +52,4 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
 BOARD_VNDK_RUNTIME_DISABLE := false
 
 # Inherit from the proprietary version
--include vendor/xiaomi/grus/BoardConfigVendor.mk
+#-include vendor/xiaomi/grus/BoardConfigVendor.mk
