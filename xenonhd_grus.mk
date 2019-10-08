@@ -19,10 +19,14 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="grus-user 9 PKQ1.181121.001 V10.3.3.0.PFBCNXM release-keys"
+# Platform security patch
+# NOTE: Only bump this with appropriate build fingerprint
+PLATFORM_SECURITY_PATCH := 2019-08-01
 
-BUILD_FINGERPRINT := "Xiaomi/grus/grus:9/PKQ1.181121.001/V10.3.3.0.PFBCNXM:user/release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="grus-user 9 PKQ1.181121.001 V10.3.4.0.PFBMIXM release-keys"
+
+BUILD_FINGERPRINT := "Xiaomi/grus/grus:9/PKQ1.181121.001/V10.3.4.0.PFBMIXM:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="grus" \
