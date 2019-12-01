@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xenonhd_grus.mk
+    $(LOCAL_DIR)/lineage_grus.mk
