@@ -1,8 +1,52 @@
+# Bluetooth
+bt.max.hfpclient.connections=1
+persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
+ro.bluetooth.emb_wp_mode=true
+ro.bluetooth.wipower=true
+
 # Camera
-persist.camera.sat.fallback.dist=45
+persist.camera.sat.fallback.dist=28
 persist.camera.sat.fallback.dist.d=5
-persist.camera.sat.fallback.luxindex=405
-persist.camera.sat.fallback.lux.d=20
+persist.camera.sat.fallback.luxindex=230
+persist.camera.sat.fallback.lux.d=50
+
+# Charger
+persist.chg.max_volt_mv=9000
 
 # Display
+ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.use_color_management=true
+ro.surface_flinger.wcg_composition_dataspace=143261696
+
+# Media
+av.offload.enable=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-http=true
+media.stagefright.enable-player=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-scan=true
+media.stagefright.thumbnail.prefer_hw_codecs=true
+mm.enable.smoothstreaming=true
+mmp.enable.3g2=true
+persist.mm.enable.prefetch=true
+
+# NFC
+ro.nfc.port=I2C
+
+# Network
+persist.data.netmgrd.qos.enable=true
+
+# Radio
+persist.radio.NO_STAPA=1
+persist.radio.VT_CAM_INTERFACE=1
+persist.radio.VT_HYBRID_ENABLE=1
+persist.radio.charge_sar_control=false
+persist.radio.dynamic_sar=false
+persist.radio.modem_dynamic_sar_state=close
+persist.radio.sar_sar_sensor=true
+
+# Wi-Fi Display
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0

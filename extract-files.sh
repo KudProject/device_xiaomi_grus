@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2020 The LineageOS Project
+# Copyright (C) 2017-2021 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -14,8 +14,8 @@ fi
 
 set -e
 
-export DEVICE=dipper
-export DEVICE_COMMON=sdm845-common
+export DEVICE=grus
+export DEVICE_COMMON=sdm710-common
 export VENDOR=xiaomi
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"

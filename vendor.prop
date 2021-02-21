@@ -1,16 +1,38 @@
 # Audio
 ro.vendor.audio.soundfx.type=mi
+vendor.audio.offload.multiple.enabled=false
+vendor.audio.voice.receiver.status=off
+
+# Bluetooth
+ro.vendor.bluetooth.wipower=false
 
 # Display
+ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.use_color_management=true
+ro.surface_flinger.wcg_composition_dataspace=143261696
 
 # Display postprocessing
 vendor.display.enable_default_color_mode=1
 
-# GNSS
-ro.hardware.flp=brcm
-ro.hardware.gps=brcm
+# Fingerprint
+persist.vendor.sys.fp.fod.location.X_Y=448,1938
+persist.vendor.sys.fp.fod.size.width_height=185,185
+
+# Listen
+vendor.audio.soundtrigger.phrase.adsp.level=40
+vendor.audio.soundtrigger.phrase.level=40
+vendor.audio.soundtrigger.training.level=50
+vendor.audio.soundtrigger.user.adsp.level=60
+vendor.audio.soundtrigger.user.level=60
+
+# Media
+vendor.mm.enable.qcom_parser=13631487
 
 # NFC
 ro.hardware.nfc_nci=nqx.default
-ro.se.type=eSE,HCE,UICC
+ro.se.type=HCE,UICC
+
+# Radio
+persist.vendor.radio.atfwd.start=true
+persist.vendor.radio.data_con_rprt=1

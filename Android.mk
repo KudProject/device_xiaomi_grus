@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018,2020 The LineageOS Project
+# Copyright (C) 2018, 2020-2021 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -15,7 +15,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),dipper)
+ifeq ($(TARGET_DEVICE),grus)
   subdir_makefiles=$(call first-makefiles-under,$(LOCAL_PATH))
   $(foreach mk,$(subdir_makefiles),$(info including $(mk) ...)$(eval include $(mk)))
 
