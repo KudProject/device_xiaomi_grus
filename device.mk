@@ -13,13 +13,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product-if-exists, vendor/xiaomi/grus/grus-vendor.mk)
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2340
-TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
@@ -75,10 +73,6 @@ PRODUCT_COPY_FILES += \
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.xiaomi_sdm710
 
 # NFC
 PRODUCT_PACKAGES += \
