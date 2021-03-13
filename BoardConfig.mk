@@ -18,6 +18,7 @@ TARGET_OTA_ASSERT_DEVICE := grus
 TARGET_SCREEN_DENSITY := 440
 
 # Kernel
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_KERNEL_CONFIG := grus_defconfig
 
 # HIDL
