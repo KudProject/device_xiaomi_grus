@@ -64,6 +64,8 @@ PRODUCT_PACKAGES += \
     init.target.rc
 
 # Fingerprint
+EXTRA_FOD_ANIMATIONS := true
+
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm710 \
     vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_sdm710
