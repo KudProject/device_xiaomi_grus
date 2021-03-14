@@ -1,0 +1,8 @@
+<!--
+  ~ Copyright (C) 2021 KudProject Development
+  ~ SPDX-License-Identifier: Apache-2.0
+ -->
+<resources>
+    <!-- Shows the required view for in-display fingerprint -->
+    <bool name="config_supportsInDisplayFingerprint">true</bool>
+</resources>
