@@ -23,6 +23,8 @@ TARGET_KERNEL_CONFIG := grus_defconfig
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+ODM_MANIFEST_SKUS += grus_global
+ODM_MANIFEST_GRUS_GLOBAL_FILES := $(DEVICE_PATH)/manifest-mtdservice.xml
 
 # NFC
 TARGET_USES_NQ_NFC := true
