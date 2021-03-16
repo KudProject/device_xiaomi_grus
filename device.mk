@@ -103,10 +103,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
-# PocketMode
-PRODUCT_PACKAGES += \
-    XiaomiPocketMode
-
 # Secure element
 PRODUCT_PACKAGES += \
     SecureElement
