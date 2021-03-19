@@ -19,7 +19,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ2A.210305.007/7124944:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="grus-user 10 QKQ1.190828.002 V12.0.3.0.QFBMIXM release-keys" \
+    PRIVATE_BUILD_DESC="grus-user 10 QKQ1.190828.002 V12.0.4.0.QFBMIXM release-keys" \
     PRODUCT_NAME="grus"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
