@@ -292,7 +292,6 @@ vendor/firmware/goodix_gt9886_limit_f2.tporder
 # Fingerprint
 vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.sdm710.so
 vendor/lib64/libgf_hal.so
-vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so|c073149df41bb3d3819ee65b3261bc21e5b57d75
 
 # GPS
 vendor/bin/loc_launcher
