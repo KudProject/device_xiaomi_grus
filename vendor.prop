@@ -30,7 +30,6 @@ vendor.audio.soundtrigger.user.level=60
 vendor.mm.enable.qcom_parser=13631487
 
 # NFC
-ro.hardware.nfc_nci=nqx.default
 ro.se.type=HCE,UICC
 
 # Radio
