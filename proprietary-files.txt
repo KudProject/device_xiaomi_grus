@@ -359,7 +359,6 @@ vendor/lib64/libnotifyaudiohal.so
 vendor/lib64/libultrasound.so
 vendor/lib64/sensors.elliptic.so
 vendor/lib64/sensors.ssc.so
-vendor/lib64/sensors.touch.so
 
 # Sensors configs
 vendor/etc/sensors/config/adux1050_0.json
@@ -389,7 +388,6 @@ vendor/etc/sensors/config/sns_rmd.json
 vendor/etc/sensors/config/sns_rotv.json
 vendor/etc/sensors/config/sns_smd.json
 vendor/etc/sensors/config/tcs3701.json
-vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
 
 # Snapdragon Computer Vision Engine
