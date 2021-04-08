@@ -15,10 +15,6 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 # Display postprocessing
 vendor.display.enable_default_color_mode=1
 
-# Fingerprint
-persist.vendor.sys.fp.fod.location.X_Y=448,1938
-persist.vendor.sys.fp.fod.size.width_height=185,185
-
 # Listen
 vendor.audio.soundtrigger.phrase.adsp.level=40
 vendor.audio.soundtrigger.phrase.level=40
