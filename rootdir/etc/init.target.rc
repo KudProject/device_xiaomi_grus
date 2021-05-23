@@ -30,9 +30,6 @@
 on init
     write /sys/class/leds/ir/max_brightness 63
 
-on init && property:ro.boot.hwc=GLOBAL
-    setprop ro.boot.product.hardware.sku grus_global
-
 on fs
     mkdir /dev/logfs 0771 system system
     mount vfat /dev/block/bootdevice/by-name/logfs /dev/logfs noatime umask=006,uid=1000,gid=1000
@@ -80,26 +77,6 @@ on charger
     mount ext4 /dev/block/bootdevice/by-name/persist /persist nosuid nodev barrier=1
     start vendor.hvdcp_opti
     setprop sys.usb.configfs 1
-
-service adsprpcd /vendor/bin/adsprpcd rootpd
-   class main
-   user system
-   group system
-
-service adsprpcd_audiopd /vendor/bin/adsprpcd audiopd
-   class main
-   user media
-   group media
-
-service adsprpcd_sensorspd /vendor/bin/adsprpcd sensorspd
-   class core
-   user system
-   group system
-
-service cdsprpcd /vendor/bin/cdsprpcd
-   class main
-   user system
-   group system
 
 service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
     class main
