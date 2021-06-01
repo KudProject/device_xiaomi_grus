@@ -7,8 +7,6 @@
 # Inherit from sdm710-common
 -include device/xiaomi/sdm710-common/BoardConfigCommon.mk
 
-BUILD_BROKEN_DUP_RULES := true
-
 DEVICE_PATH := device/xiaomi/grus
 
 # Assert
