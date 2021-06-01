@@ -3,8 +3,8 @@
 # specify 'check', and must come before any filesystems that do specify 'check'
 
 #<src>                                      <mnt_point>             <type>  <mnt_flags and options>                                                                           <fs_mgr_flags>
-/dev/block/platform/soc/1d84000.ufshc/by-name/system    /system      ext4    ro,barrier=1,discard                                                                              wait,avb=vbmeta,first_stage_mount
-/dev/block/platform/soc/1d84000.ufshc/by-name/vendor    /vendor      ext4    ro,barrier=1,discard                                                                              wait,avb,first_stage_mount
+/dev/block/by-name/system                    /system                 ext4    ro,barrier=1,discard                                                                              wait,avb=vbmeta,first_stage_mount
+/dev/block/by-name/vendor                    /vendor                 ext4    ro,barrier=1,discard                                                                              wait,avb,first_stage_mount
 /dev/block/bootdevice/by-name/cust           /metadata               ext4    noatime,nosuid,nodev,discard                                                                      wait,check,formattable
 /dev/block/bootdevice/by-name/userdata       /data                   f2fs    noatime,nosuid,nodev,discard,reserve_root=32768,resgid=1065,lazytime,background_gc=sync,fsync_mode=strict   latemount,wait,check,fileencryption=aes-256-xts,quota
 /dev/block/bootdevice/by-name/userdata       /data                   ext4    noatime,nosuid,nodev,barrier=1,noauto_da_alloc,lazytime                                           latemount,wait,check,fileencryption=aes-256-xts,quota

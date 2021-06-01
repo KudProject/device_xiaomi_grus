@@ -18,6 +18,7 @@ TARGET_OTA_ASSERT_DEVICE := grus
 TARGET_SCREEN_DENSITY := 440
 
 # Kernel
+BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/1d84000.ufshc
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_KERNEL_CLANG_PATH := $(PWD)/vendor/qcom/sdclang-12.0
 TARGET_KERNEL_CONFIG := grus_defconfig
